@@ -1,7 +1,8 @@
 import math
 
 def pitsamittari(halkaisija, hinta):
-    hintanelioina = hinta / (halkaisija * math.pi / 100)
+    halkaisija = halkaisija / 100
+    hintanelioina = hinta / ((halkaisija  / 2) * (halkaisija  / 2) * math.pi)
     return hintanelioina
 
 halkaisija1 = float(input("Syötä ensimmäisen pitsan halkaisija senttimetreinä: "))
