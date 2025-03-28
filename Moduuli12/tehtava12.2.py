@@ -1,6 +1,6 @@
 import requests
 
-appid = "afd637bf7cd7aa962ceb18ffed800338"
+appid = "placeholder"
 paikkakunta = input("Syötä haluttu paikkakunta suomeksi: ")
 pyynto = f"https://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid={appid}&units=metric&lang=fi"
 vastaus = requests.get(pyynto).json()
